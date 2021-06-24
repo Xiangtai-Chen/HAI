@@ -1,0 +1,30 @@
+authorName: Xiangtai
+experimentName: Auto-HAI
+trialConcurrency: 1
+maxExecDuration: 1h
+maxTrialNum: 100
+# 可选项: local, remote, pai, kubeflow
+trainingServicePlatform: local
+# 可选项: true, false, default: false
+useAnnotation: false
+searchSpacePath: ./search_space.json
+# 可选项: true, false, default: false
+multiThread: false
+logDir: ./nni-experiments
+tuner:
+  # 可选项: TPE, Random, Anneal, Evolution
+  builtinTunerName: TPE
+  classArgs:
+    # 可选项: maximize, minimize
+    optimize_mode: maximize
+assessor:
+  # 可选项: Medianstop
+  builtinAssessorName: Medianstop
+  classArgs:
+    # 可选项: maximize, minimize
+    optimize_mode: minimize
+    start_step: 5
+trial:
+  command: python main.py
+  codeDir: ./
+

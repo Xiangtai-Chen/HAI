@@ -1,0 +1,4 @@
+{
+    "dropout_rate":{"_type":"uniform","_value":[0.1,0.8]},
+    "learning_rate":{"_type":"uniform","_value":[0.001, 0.01]}
+}
