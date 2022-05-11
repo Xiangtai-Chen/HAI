@@ -1,6 +1,7 @@
 # HAI
 Heterogeneous Graph Learning for Explainable Recommendation over Academic Networks
-[HAI](https://arxiv.org/abs/2202.07832)
+
+(paper address [HAI](https://arxiv.org/abs/2202.07832))
 
 # Reference
 ```
